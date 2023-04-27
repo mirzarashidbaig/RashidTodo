@@ -1,42 +1,173 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.container{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F1F6F9;
+}
+
+.center{
+  width: 100%;
+  max-width: 380px;
+  
+ 
+}
+
+.toDo{
+  width: 100%;
+  position: relative;
+  background: #E4DCCF;
+  border: 1px solid black;
+  border-radius: 10px;
+
+}
+
+.contentoftodo{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.headaing{
+  width: 100%;
   text-align: center;
+  color: black;
+  margin: 20px 0;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.inputbox{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inputbox input{
+  flex: 1;
+  margin: 0 10px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  border-radius: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.addbtn{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: #A555EC;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
 }
 
-.card {
-  padding: 2em;
+.Add{
+  color:#fafcfb;
+  font-size: rem;
+  font-weight: 600;
+  border: none;
+  outline: none;
 }
 
-.read-the-docs {
-  color: #888;
+.Listitem{
+  width: 100%;
+  position: relative;
+  padding: 20px 35px; 
+
 }
+
+.List{
+  list-style: none;
+  position: relative;
+
+}
+
+
+
+
+.listitems{
+  width: 100%;
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  margin: 10px 0;
+ 
+
+}
+
+.listitems li{
+  margin: 15px 0px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  position: relative;
+  flex: 1;
+  margin-left: 30px;
+  overflow-wrap: break-word;
+  overflow-y: scroll;
+  padding-right: 10px;
+  
+}
+
+.listitems button{
+  
+  margin-left: 7px;
+}
+
+.delete{
+  border: none;
+  outline: none;
+  font-size: 1.8rem;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.delete:hover{
+  background: red;
+  color: white;
+}
+
+.edit{
+ 
+  font-size: 1.8rem;
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 5px;
+  
+}
+
+.edit:hover{
+  background: rgb(104, 185, 104);
+  color: white;
+}
+
+.check{
+  position: absolute;
+  top: 38%;
+  left: 0;
+  
+}
+
+
+.List li.checked{
+  text-decoration: line-through;
+}
+
+
+
+
